@@ -12,7 +12,7 @@ jobs:
       - name: Ping Supabase Edge Function
         run: |
           curl -X POST "https://ouchqemhrhxwnwiknoet.supabase.co/functions/v1/external-ingest" \
-          -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+            -H "Authorization: Bearer $SUPABASE_ANON_KEY"
 
 
 
