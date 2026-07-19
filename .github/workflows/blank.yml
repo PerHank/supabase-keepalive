@@ -2,7 +2,7 @@ name: Supabase Keepalive
 
 on:
   schedule:
-    - cron: "0 8 * * 1"   # Runs at 08:00 every Monday
+    - cron: "0 8 * * 1"    # Runs at 08:00 every Monday
   workflow_dispatch:
 
 jobs:
@@ -12,6 +12,7 @@ jobs:
       - name: Ping Supabase Edge Function
         run: |
           curl -X POST "https://ouchqemhrhxwnwiknoet.supabase.co/functions/v1/external-ingest" \
-  -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+          -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+
 
 
