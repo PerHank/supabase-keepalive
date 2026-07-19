@@ -11,5 +11,7 @@ jobs:
     steps:
       - name: Ping Supabase Edge Function
         run: |
-          curl -X GET "https://ouchqemhrhxwnwiknoet.supabase.co/functions/v1/external-ingest"
+          curl -X POST "https://ouchqemhrhxwnwiknoet.supabase.co/functions/v1/external-ingest" \
+  -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+
 
